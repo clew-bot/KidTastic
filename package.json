@@ -4,7 +4,8 @@
   "description": "Colman Mark Tim Chad L.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint **/*.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/clew-bot/project-2#readme",
   "dependencies": {
     "eslint": "^7.15.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-prettier": "^3.3.0"
   }
 }
