@@ -1,1 +1,1 @@
-var block = 2
+const block = 2;
