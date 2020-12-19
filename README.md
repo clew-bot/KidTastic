@@ -1,2 +1,10 @@
-# project-2
-Colman Mark Tim Chad L.
+# KidTastic
+
+README coming soon.
+
+## Contributers
+
+Chad Lew
+Mark Shelgran
+Colman Webster
+Tim
