@@ -1,0 +1,23 @@
+div {
+  border: 1px outset black;
+  width: 355px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+}
+
+button {
+  background-color: gold;
+  border-radius: 3px;
+  color: blueviolet;
+  height: 50px;
+}
+
+button:hover {
+  border-style: inset;
+}
+
+#copyright {
+  color: white;
+  text-align: center;
+}
