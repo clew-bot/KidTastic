@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Kimberly",
+    "lastName": "Zeising",
+    "birthDate": "08/17/2012",
+    "userId": 1
+  },
+  {
+    "firstName": "Melissa",
+    "lastName": "Johnson",
+    "birthDate": "01/05/2009",
+    "userId": 1
+  }, 
+  {
+    "firstName": "Wario",
+    "lastName": "Webster",
+    "birthDate": "01/15/2010",
+    "userId": 2
+  },
+  {
+    "firstName": "Peach",
+    "lastName": "Webster",
+    "birthDate": "02/16/2014",
+    "userId": 2
+  },
+  {
+    "firstName": "Betty",
+    "lastName": "Lew",
+    "birthDate": "04/06/2018",
+    "userId": 3
+  },
+  {
+    "firstName": "Peggy",
+    "lastName": "Lew",
+    "birthDate": "08/17/2015",
+    "userId": 3
+  },
+  {
+    "firstName": "Phineas",
+    "lastName": "Budkas",
+    "birthDate": "10/22/2016",
+    "userId": 4
+  },
+  {
+    "firstName": "Fern",
+    "lastName": "Budkas",
+    "birthDate": "08/17/2012",
+    "userId": 4
+  }   
+]
