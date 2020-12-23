@@ -12,16 +12,16 @@ const seedDatabase = async () => {
   //   returning: true,
   // });
 
-  userData.forEach(async (user) => {
+  users.forEach(async (user) => {
     await User.create(user);
   });
 
   for (const children of childData) {
-    await Child.create(children);
-    // await Child.create({
-    //   ...children,
-    //   userId: users[Math.floor(Math.random() * users.length)].id,
-    // });
+    // await Child.create(children);
+    await Child.create({
+      ...children,
+      userId: users[Math.floor(Math.random() * users.length)].id,
+    });
   }
 
   process.exit(0);
