@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "Colman",
+    "lastName": "Webster",
+    "email": "colmanwebster@google.com",
+    "password": "password12345"
+  },
+  {
+    "firstName": "Chad",
+    "lastName": "Lew",
+    "email": "chadlew@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "firstName": "Tim",
+    "lastName": "budkas",
+    "email": "timbudkas@google.com",
+    "password": "password12345"
+  },
+  {
+    "firstName": "Mark",
+    "lastName": "Shelgren",
+    "email": "markshelgren@outlook.com",
+    "password": "password12345"
+  }     
+]
