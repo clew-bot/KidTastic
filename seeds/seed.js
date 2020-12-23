@@ -7,17 +7,16 @@ const childData = require("./childData.json");
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  // const users = await User.bulkCreate(userData, {
-  //   individualHooks: true,
-  //   returning: true,
-  // });
-
-  users.forEach(async (user) => {
-    await User.create(user);
+  const users = await User.bulkCreate(userData, {
+    individualHooks: true,
+    returning: true,
   });
 
+  // users.forEach(async (user) => {
+  //   await User.create(user);
+  // });
+
   for (const children of childData) {
-    // await Child.create(children);
     await Child.create({
       ...children,
       userId: users[Math.floor(Math.random() * users.length)].id,
