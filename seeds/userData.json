@@ -1,5 +1,11 @@
 [
   {
+    "firstName": "Mark",
+    "lastName": "Shelgren",
+    "email": "markshelgren@outlook.com",
+    "password": "password12345"
+  },     
+  {
     "firstName": "Colman",
     "lastName": "Webster",
     "email": "colmanwebster@google.com",
@@ -16,11 +22,5 @@
     "lastName": "budkas",
     "email": "timbudkas@google.com",
     "password": "password12345"
-  },
-  {
-    "firstName": "Mark",
-    "lastName": "Shelgren",
-    "email": "markshelgren@outlook.com",
-    "password": "password12345"
-  }     
+  }
 ]
