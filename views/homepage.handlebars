@@ -1,0 +1,17 @@
+<!-- Loop over each object in the projects array -->
+{{#each Child as |Child| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <br
+        href="/Child/{{Child.id}}">{{Child.firstName}}</br>{{Child.lastName}}</br>{{Child.birthDate}}</br>{{Child.userId}}</a>
+    </h2>
+
+  </div>
+  <div class="col-md-7">
+
+  </div>
+</div>
+{{/each}}
