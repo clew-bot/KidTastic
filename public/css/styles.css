@@ -1,8 +1,6 @@
-button {
-  background-color: #eb3480;
-  border-radius: 3px;
-  color: blueviolet;
-  height: 50px;
+.SignUpcontainer {
+  text-align: center;
+  
 }
 
 button:hover {
@@ -21,13 +19,14 @@ button:hover {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: linear-gradient(90deg, red, orange, #e6df81, green, blue, purple);
     color: #ffffff;
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 body {
   background-color: #d9dcd6;
@@ -35,8 +34,10 @@ body {
 header {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #2a607c;
+  background: linear-gradient(90deg, red, orange, #e6df81, green, blue, purple);
   color: #ffffff;
+  margin-bottom: 10px;
+  border: groove black 4px;
 }
 header h1 {
   display: inline-block;
@@ -82,10 +83,12 @@ main {
 }
 .welcome img {
   max-height: 200px;
+  border-radius: 25px;
 }
 .welcome h2 {
   margin-bottom: 20px;
   font-size: 36px;
+  
 }
 footer {
   padding: 30px;
@@ -95,4 +98,35 @@ footer {
 }
 footer h2 {
   font-size: 20px;
+}
+footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d1d4c7;
+    color: white;
+    text-align: center;
+  }
+  .footerContainer {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    background: linear-gradient(90deg, red, orange, #e6df81, green, blue, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .footerContainer:hover {
+    color: transparent;
+    transition: 500ms ease;
+  }
+  a {
+    color: inherit;
+  }
+  .welcome {
+    border-radius: 7px;
+  }
+#hpImg1 {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.81); 
+   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.81);
 }
