@@ -30,6 +30,8 @@
   },
   "devDependencies": {
     "bcrypt": "^5.0.0",
-    "eslint-plugin-prettier": "^3.3.0"
+    "connect-session-sequelize": "^7.0.4",
+    "eslint-plugin-prettier": "^3.3.0",
+    "express-session": "^1.17.1"
   }
 }
