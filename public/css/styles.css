@@ -39,7 +39,7 @@ header {
   margin-bottom: 10px;
   border: groove black 4px;
 }
-header h1 {
+header h1 h2{
   display: inline-block;
   font-size: 48px;
 }
