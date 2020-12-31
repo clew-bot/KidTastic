@@ -34,7 +34,7 @@ router.get("/:id", async (req, res) => {
     // Pass serialized data and session flag into template
     res.render("homepage", {
       children,
-      loggedIn: true,
+      loggedIn: false,
     });
   } catch (err) {
     console.log("Error message", err);
