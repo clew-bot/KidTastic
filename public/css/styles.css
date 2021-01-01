@@ -110,7 +110,7 @@ footer {
     width: 100%;
     background-color: #d1d4c7;
     color: white;
-    text-align: center;
+    text-align: center; 
   }
   .footerContainer {
     display: flex;
