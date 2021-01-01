@@ -39,9 +39,13 @@ header {
   margin-bottom: 10px;
   border: groove black 4px;
 }
-header h1 h2{
+
+header h1{
   display: inline-block;
   font-size: 48px;
+  border-radius: 3px;
+  color: white;
+  background-color: green;
 }
 
 header nav ul {
@@ -106,7 +110,7 @@ footer {
     width: 100%;
     background-color: #d1d4c7;
     color: white;
-    text-align: center;
+    text-align: center; 
   }
   .footerContainer {
     display: flex;
@@ -126,7 +130,29 @@ footer {
   .welcome {
     border-radius: 7px;
   }
+
+#headerTag2{
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(90deg, red, orange, #e6df81, green, blue, purple);
+  color: #ffffff;
+  margin-bottom: 10px;
+  border: groove black 4px;
+}
+
 #hpImg1 {
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.81); 
    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.81);
+}
+
+#homepage{
+  display: inline-block;
+  font-size: 15 px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 30px;
+  color: white;
+  background-color: green;
+  text-align: center;
 }
