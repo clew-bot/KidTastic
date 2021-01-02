@@ -5,21 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to KidTastic!</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    {{!-----------------CSS IS NOW LINKED TO EVERY HANDLEBAR INDIVIDUALLY DUE TO CONFLICTING CSS FILES------------------}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-
-
-
 </head>
-
 <body>
-
-
-    <nav>
-        <!-- Conditionally render login or logout links -->
+    {{{body}}}
+<nav>
+        <!-- Conditionally render login or logout links /// ADDED TO BOTTOM OF PAGE -->
         {{#if loggedIn}}
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
@@ -29,9 +24,6 @@
         <button>ADD<a id="addBtn"></a></button>
     </nav>
     {{!--Other page goes here --}}
-    {{{body}}}
-
-
 </body>
 
 </html>

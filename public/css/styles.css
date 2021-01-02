@@ -12,16 +12,6 @@ button:hover {
   text-align: center;
 }
 
-.whoPara {
-  display: inline-block;
-}
-.whoWeAre {
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: linear-gradient(90deg, red, orange, #e6df81, green, blue, purple);
-    color: #ffffff;
-}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -29,38 +19,16 @@ button:hover {
   font-family: 'Quicksand', sans-serif;
 }
 body {
-  background-color: #d9dcd6;
+  background-color:#d5e8f2;
 }
-header {
+
+#partialHeader {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: linear-gradient(90deg, red, orange, #e6df81, green, blue, purple);
   color: #ffffff;
   margin-bottom: 10px;
   border: groove black 4px;
-}
-
-header h1{
-  display: inline-block;
-  font-size: 48px;
-  border-radius: 3px;
-  color: white;
-  background-color: green;
-}
-
-header nav ul {
-  list-style-type: none;
-}
-header nav ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-p {
-  font-size: 18px;
 }
 
 .float-left {
@@ -71,29 +39,58 @@ p {
   float: right;
   margin-right: 25px;
 }
-main {
-  width: 75%;
-  display: inline-block;
-  margin-left: 20px;
-}
 
-.welcome {
-  margin-bottom: 20px;
+.welcome1 {
+  margin-top: 5vw;
+  margin-right: 20vw;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
   padding: 50px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #3a8a56;
+  background-color: dodgerblue;
   color: #ffffff;
+  border-radius: 15px;
+  border: double 20px rgb(240, 174, 218);
 }
-.welcome img {
-  max-height: 200px;
+.welcome2 {
+  margin-right: 5vw;
+  margin-left: 20vw;
+  margin-bottom: 5vw;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:#5a92ed;
+  color: #ffffff;
   border-radius: 25px;
+  border: double 20px white;
 }
-.welcome h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  
+.welcome3 {
+  margin-right: 20vw;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: dodgerblue;
+  color: #ffffff;
+  border-radius: 20px;
+  border: double 20px rgb(240, 174, 218);
 }
+.welcome4 {
+  margin-right: 5vw;
+  margin-left: 20vw;
+  margin-bottom: 5px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #5a92ed;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 5vw;
+  border: double 20px white;
+}
+
 footer {
   padding: 30px;
   clear: both;
@@ -125,24 +122,20 @@ footer {
     transition: 500ms ease;
   }
   a {
-    color: inherit;
+    color: white;
   }
   .welcome {
     border-radius: 7px;
   }
 
-#headerTag2{
-  padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background: linear-gradient(90deg, red, orange, #e6df81, green, blue, purple);
-  color: #ffffff;
-  margin-bottom: 10px;
-  border: groove black 4px;
-}
+
 
 #hpImg1 {
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.81); 
    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.81);
+   max-height: 200px;
+    border-radius: 5px;
+    max-width: 250px;
 }
 
 #homepage{
@@ -155,4 +148,9 @@ footer {
   color: white;
   background-color: green;
   text-align: center;
+}
+#kiddie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
