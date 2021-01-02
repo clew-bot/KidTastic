@@ -1,4 +1,8 @@
 {{> header}}
+<link rel="stylesheet" href="/css/styles.css">
+{{!-- 'homelandbodybackground.css' IS CSS FOR HOMELAND ONLY --}}
+<link rel="stylesheet" href="/css/homelandbodybackground.css">
+<link href="/css/hover.css" rel="stylesheet" media="all">
 <div class="card">
 <form id="login-form">
       {{!-- <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"><br>
@@ -8,29 +12,47 @@
     </div>
 
 <main>
-        <section class="welcome">
-        
-            <img src="./images/ladybug.png" class="float-left" id="hpImg1">
-            <h2>Who are we?</h2>
-            <p>
-            We are KidTastic, we were formed in December of 2020 with the goal of keeping our kids busy while we code. Here you will find fun activities your child can keep occupied while not having to worry about your child going down a huge rabbit hole on YouTube. We offer free videos, games, and books for your child's needs to keep busy and happy.
-            </p>
+    {{!-- JERRY RIGHTSIDE --}}
+    <img src="./images/Jerry_Mouse.png" class="float-right hvr-sink">
+    {{!-- LADYBUG LEFTSIDE --}}
+    <img src="./images/lady.png" class="float-left hvr-float-shadow" style="max-height: 700px;">
+    {{!-- KIDTASTIC LOGO --}}
+    <img src="./images/KidTastic1.png" class="hvr-skew" id="kiddie">
+
+        {{!------ - First paragraph --------}}
+        <section class="welcome1">
+            <img src="./images/hero.gif" class="float-left hvr-grow-rotate" id="hpImg1">
+                <h2>Who are we?</h2>
+                    <br>
+                        <p>
+                            We are KidTastic, we were formed in December of 2020 with the goal of creating free entertainment for kids of all ages. Our robust website will surely keep you satisfied for hours on end.
+                        </p>
         </section>
-      
-        <section class="welcome">
-            <img src="./images/dexter.jpg" alt="We care about your safety" class="float-right" id="hpImg1">
-            <h2>Why We Care</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. We at KidTastic want to ensure that your child is taken care of in the safest way possible. That's why we we've handpicked over a dozen entertaining videos that your child can watch, and provide other entertainment options when the videos get boring. All for free.
-            </p>
+        {{!------ Second paragraph --------}}
+        <section class="welcome2">
+            <img src="./images/spongebob.gif" alt="We care about your safety" class="float-right hvr-grow-rotate" id="hpImg1">
+                <h2>KidTastic Watch</h2>
+                    <br>
+                        <p>
+                            Youtube can be strange at times. Finding certain episodes and shows is pretty hard nowadays in 2021. That's why we we've handpicked over a dozen entertaining videos to watch and listen from KidTastic Watch (powered by YouTube), and provide other entertainment options when the videos get boring. All for free.
+                        </p>
         </section>
-        <section class="welcome">
-            <img src="./images/peppa.jpg" alt="Just a few clicks away" class="float-left" id="hpImg1">
-            <h2>Awesome-ness is just a few steps away.</h2>
-            <p>
-                 KidTastic offers free services for anyone under the ages of 14. We believe in education and offering the right services for your child to grow and succeed in the best way possible.{{!-- NEEDS WORK --}}
-            </p>
+        {{!------ Third paragraph -------}}
+        <section class="welcome3">
+            <img src="./images/creating.gif" alt="We care about your safety" class="float-right hvr-grow-rotate" id="hpImg1">
+                <h2>KidTastic Create</h2>
+                    <br>
+                        <p>
+                            Our KidTastic Create application is still in beta, but we are opening it up to the general public starting today! Feel free to play around with the canvas and explore creative options!
+                        </p>
         </section>
-    </main>
-</section>
-{{> footer}}
+        {{!------ Fourth paragraph -------}}
+        <section class="welcome4">
+            <img src="./images/iceman.gif" alt="Just a few clicks away" class="float-left hvr-grow-rotate" id="hpImg1">
+                <h2>Awesome-ness is just a few clicks away.</h2><br>
+                    <p>
+                        KidTastic's services are completely free and no credit/debit card is required to create or watch on our platform. All you need to do is create an account and get started! <a href="/signup">Click here</a> to get started!{{!-- NEEDS WORK --}}
+                    </p>
+        </section>
+</main>
+
