@@ -2,7 +2,9 @@ const router = require("express").Router();
 const { Child, User } = require("../models");
 
 router.get("/", async (req, res) => {
-  res.render("homeland");
+  res.render("homeland", {
+    // loggedIn: req.session.loggedIn <-- USE THIS FOR WATCH AND CREATE
+  });
 });
 
 router.get("/signUp", async (req, res) => {
@@ -13,6 +15,13 @@ router.get("/login", async (req, res) => {
   res.render("login");
 });
 
+router.get("/homepage", async (req, res) => {
+  res.render("homepage");
+});
+
+router.get("/watch", async (req, res) => {
+  res.render("watch");
+});
 router.get("/:id", async (req, res) => {
   try {
     // Get all children and JOIN with user data
