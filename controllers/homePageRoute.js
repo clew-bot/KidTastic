@@ -17,11 +17,11 @@ router.get("/login", async (req, res) => {
 
 router.get("/homepage", async (req, res) => {
   res.render("homepage");
-})
+});
 
 router.get("/watch", async (req, res) => {
   res.render("watch");
-})
+});
 router.get("/:id", async (req, res) => {
   try {
     // Get all children and JOIN with user data
