@@ -3,24 +3,32 @@ const { Child, User } = require("../models");
 
 router.get("/", async (req, res) => {
   res.render("homeland", {
-    // loggedIn: req.session.loggedIn <-- USE THIS FOR WATCH AND CREATE
+    loggedIn: false,
   });
 });
 
 router.get("/signUp", async (req, res) => {
-  res.render("signup");
+  res.render("signup", {
+    loggedIn: req.session.loggedIn,
+  });
 });
 
 router.get("/login", async (req, res) => {
-  res.render("login");
+  res.render("login", {
+    loggedIn: req.session.loggedIn,
+  });
 });
 
 router.get("/homepage", async (req, res) => {
-  res.render("homepage");
+  res.render("homepage", {
+    loggedIn: req.session.loggedIn,
+  });
 });
 
 router.get("/watch", async (req, res) => {
-  res.render("watch");
+  res.render("watch", {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get("/:id", async (req, res) => {
   try {
