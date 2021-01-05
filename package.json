@@ -26,12 +26,12 @@
     "mysql2": "^2.2.5",
     "node-pre-gyp": "^0.17.0",
     "prettier": "^2.2.1",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "express-session": "^1.17.1"
   },
   "devDependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
-    "eslint-plugin-prettier": "^3.3.0",
-    "express-session": "^1.17.1"
+    "eslint-plugin-prettier": "^3.3.0"
   }
 }

@@ -8,6 +8,7 @@ const logout = async () => {
 
   if (response.ok) {
     // If successfully logged out, redirect to the login page
+    alert("You have logged out, Goodbye from KidTastic!");
     document.location.replace("/");
   } else {
     alert(response.statusText);

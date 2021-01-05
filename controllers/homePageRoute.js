@@ -9,15 +9,10 @@ router.get("/", async (req, res) => {
 
 router.get("/signUp", async (req, res) => {
   res.render("signup", {
-    loggedIn: req.session.loggedIn,
+
   });
 });
 
-router.get("/login", async (req, res) => {
-  res.render("login", {
-    loggedIn: req.session.loggedIn,
-  });
-});
 
 router.get("/homepage", async (req, res) => {
   res.render("homepage", {
