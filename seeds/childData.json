@@ -1,49 +1,41 @@
 [
   {
-    "firstName": "Kimberly",
-    "lastName": "Zeising",
+    "name": "Kimberly Zeising",
     "birthDate": "08/17/2012",
     "userId": 1
   },
   {
-    "firstName": "Melissa",
-    "lastName": "Johnson",
+    "name": "Wario",
     "birthDate": "01/05/2009",
     "userId": 1
   }, 
   {
-    "firstName": "Wario",
-    "lastName": "Webster",
+    "name": "Bowser",
     "birthDate": "01/15/2010",
     "userId": 2
   },
   {
-    "firstName": "Peach",
-    "lastName": "Webster",
+    "name": "Peach",
     "birthDate": "02/16/2014",
     "userId": 2
   },
   {
-    "firstName": "Betty",
-    "lastName": "Lew",
+    "name": "Daisy",
     "birthDate": "04/06/2018",
     "userId": 3
   },
   {
-    "firstName": "Peggy",
-    "lastName": "Lew",
+    "name": "Bullet Bill",
     "birthDate": "08/17/2015",
     "userId": 3
   },
   {
-    "firstName": "Phineas",
-    "lastName": "Budkas",
+    "name": "Rosaline",
     "birthDate": "10/22/2016",
     "userId": 4
   },
   {
-    "firstName": "Fern",
-    "lastName": "Budkas",
+    "name": "Goomba",
     "birthDate": "08/17/2012",
     "userId": 4
   }   
