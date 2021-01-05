@@ -4,13 +4,13 @@ const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   res.render("homeland", {
-    loggedIn: req.session.logged_In
+    loggedIn: req.session.loggedIn
   });
 });
 
 router.get("/signUp", async (req, res) => {
   res.render("signup", {
-    loggedIn: req.session.logged_In
+    loggedIn: req.session.loggedIn
   });
 });
 // router.get("/homepage", withAuth, async (req, res) => {
@@ -22,7 +22,7 @@ router.get("/signUp", async (req, res) => {
 router.get("/dashboard", withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
+    const userData = await User.findByPk(req.session.userId, {
       attributes: { exclude: ["password"] },
       include: [{ model: Child }],
     });
@@ -31,7 +31,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
 
     res.render("homepage", {
       ...user,
-      loggedIn: req.session.logged_In,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -40,7 +40,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
 
 router.get("/watch", withAuth, async (req, res) => {
   res.render("watch", {
-    loggedIn: req.session.logged_In,
+    loggedIn: req.session.loggedIn,
   });
 });
 
