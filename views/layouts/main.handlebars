@@ -13,20 +13,7 @@
 </head>
 <body>
     {{{body}}}
-<nav>
-        <!-- Conditionally render login or logout links /// ADDED TO BOTTOM OF PAGE -->
-        {{#if loggedIn}}
-        <h3>You are currently logged in</h3>
-        <a href="/watch">watch</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-        <button>ADD<a id="addBtn"></a></button>
-    </nav>
-    {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+
 </body>
 
 </html>

@@ -91,25 +91,7 @@ body {
   border: double 20px white;
 }
 
-footer {
-  padding: 30px;
-  clear: both;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center;
-}
-footer h2 {
-  font-size: 20px;
-}
-footer {
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #d1d4c7;
-    color: white;
-    text-align: center; 
-  }
-  .footerContainer {
+  .headerContainer {
     display: flex;
     justify-content: space-around;
     color: black;
@@ -127,8 +109,6 @@ footer {
   .welcome {
     border-radius: 7px;
   }
-
-
 
 #hpImg1 {
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.81); 
