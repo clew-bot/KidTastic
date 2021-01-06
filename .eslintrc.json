@@ -10,6 +10,7 @@
     },
     "extends": "prettier",
     "plugins": ["prettier"],
+    "ignorePatterns": ["*.min.js"],
     "rules": {
       "array-callback-return": "error",
       "camelcase": "error",
