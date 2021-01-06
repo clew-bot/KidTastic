@@ -3,12 +3,13 @@ const newFormHandler = async (event) => {
 
   const name = document.querySelector("#kidName").value.trim();
   const birthDate = document.querySelector("#kidBirth").value.trim();
-  const userId = document.querySelector("#userId").value.trim();
+  const email = document.querySelector("#kidUsername").value.trim();
+  const password = document.getElementById("password-login").value.trim();
 
-  if (name && birthDate && userId) {
+  if (name && birthDate && email && password) {
     const response = await fetch("/api/children", {
       method: "POST",
-      body: JSON.stringify({ name, birthDate, userId }),
+      body: JSON.stringify({ name, birthDate, email, password }),
       headers: {
         "Content-Type": "application/json",
       },

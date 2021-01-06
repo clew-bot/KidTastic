@@ -20,13 +20,14 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    isChild: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-      validate: {
-        isEmail: true,
-      },
     },
     password: {
       type: DataTypes.STRING,

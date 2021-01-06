@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Child } = require("../../models");
+const { Child, User } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 router.post("/", withAuth, async (req, res) => {
@@ -9,8 +9,15 @@ router.post("/", withAuth, async (req, res) => {
       userId: req.session.userId,
     });
 
+    const childUserData = await User.create({
+      ...req.body,
+      isChild: true,
+    });
+    console.log(req.session);
+    console.log(childUserData);
     res.status(200).json(newChild);
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
   }
 });
