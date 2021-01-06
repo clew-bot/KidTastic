@@ -19,7 +19,7 @@
   "homepage": "https://github.com/clew-bot/project-2#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "eslint": "^7.15.0",
+    "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
