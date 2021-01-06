@@ -17,8 +17,8 @@
 <form class="form new-project-form">
   <h2>Child can fill this form out individually or with a parent/guardian:</h2>
   <label for="kidName">name:</label>
- 
- <input class="form-input" type="text" id="kidName" name="project-name" />
+
+  <input class="form-input" type="text" id="kidName" name="project-name" />
 
   <div class="form-group">
     <label for="kidBirth">birthday: </label>
@@ -26,31 +26,16 @@
   </div>
   <div class="form-group">
     <label for="userId">username: </label>
-    <textarea class="form-input" id="userId" name="project-desc"></textarea>
+    <textarea class="form-input" id="kidUsername" name="project-desc"></textarea>
   </div>
+  <label for="password-login">password:</label>
+  <input class="form-input" type="password" id="password-login" />
   <div class="form-group">
     <button type="submit">Add Child</button>
+
   </div>
 </form>
 {{/unless}}
-
-{{!-- {{#if projects.length}}
-<div class="col-md-6 project-list">
-  <h3>Current Projects:</h3>
-
-  {{#each projects as |project|}}
-  <div class="row mb-2">
-    <div class="col-md-8">
-      <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
-    </div>
-    <div class="col-md-4">
-      <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
-    </div>
-  </div>
-  {{/each}}
-</div>
-{{/if}} --}}
-
 
 <script src="./js/profile.js"></script>
 
@@ -67,13 +52,10 @@
     <div id="homepage">
       <h2>
         <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-        {{{get_emoji}}}
+        {{!-- {{{get_emoji}}} --}}
         <br href="/Child/{{Child.id}}">{{Child.name}}</br></br>{{Child.birthDate}}</br>{{Child.userId}}</a>
       </h2>
     </div>
-
-
-
   </div>
   <div class="col-md-7">
 
