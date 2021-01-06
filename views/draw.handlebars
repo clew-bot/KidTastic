@@ -1,0 +1,90 @@
+<title>Fabric JS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/css/draw.css" />
+</head>
+
+<body>
+    <div id="resizer">
+        <h1 id="welcome">Welcome to the Playground!</h1>
+        <div class="main" style="display: inline-flex;width:100%;">
+            <div id="cContainer" style=" display: inline">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="enablingC" style="display: inline">
+                <button id="draw">Enable Drawing</button><br /><br />
+                <button id="textGenerate">Generate Text</button><br>
+
+
+
+                <button onclick="undo()">Undo</button>
+                <button onclick="redo()">Redo</button>
+                <h4>Choose a Shape</h4>
+                <select id="shapesId">
+                    <option value="">Please select</option>
+                    <option value="rectangle">Square</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="circle">Circle</option>
+                    <option value="trapezoid">Trapezoid</option>
+                    <option value="ellipse">Ellipse</option>
+                </select>
+                <button id="realShapes" onclick="draw()">Go!</button>
+
+                <h4>Choose a Sticker!</h4>
+                <select id="characterId">
+                    <option value="">Please Select</option>
+                    <option value="blossom">Blossom</option>
+                    <option value="booba">Booba</option>
+                    <option value="bubbles">Bubbles</option>
+                    <option value="buttercup">Buttercup</option>
+                    <option value="clifford">Clifford</option>
+                    <option value="goku">Goku</option>
+                    <option value="ml">Miraculous Ladybug</option>
+                    <option value="molang">Molang</option>
+                    <option value="patrick">Patrick Star</option>
+                    <option value="peppa">Peppa Pig</option>
+                    <option value="pikachu">Pikachu</option>
+                    <option value="scooby">Scooby Doo</option>
+                    <option value="spiderman">Spiderman</option>
+                    <option value="sponge">Spongebob SquarePants</option>
+                    <option value="squidward">Squidward</option>
+                    <option value="tomNook">Tom Nook</option>
+                    <option value="rekt">Wreck-it-Ralph</option>
+                </select>
+                <button id="getCharacter" onclick="genChar()">Go!</button>
+                <h4>Drawing Pallette</h4>
+                <div id="palleteCont" style="margin-bottom:20px;display:inline-flexbox">
+
+
+                    <!-- <button id="blue">Blue</button>
+            <button id="green">Green</button>
+            <button id="purple">Purple</button>
+            <button id="pink">Pink</button>
+            <button id="orange">Orange</button>
+            <button id="yellow">Yellow</button>
+            <button id="black">Black</button>
+            <button id="brown">Brown</button>
+            <button id="surpriseMF">SURPRISE ME!</button> -->
+                </div>
+                <label for="drawingStroke">
+                    <h5>Drawing Width:</h5>
+                </label>
+                <input type="range" value="1" min="0" max="150" id="drawingStroke" />
+            </div>
+        </div>
+        <div class="genInput">
+            <button id="removeEl">Remove</button>
+            <button id="removeAll">Clear All</button>
+            <button id="saveImg">Save Image (paint only)</button>
+        </div>
+        <div id="removeBtn"></div>
+        <div class="palleteContainer"></div>
+        <p>
+            made with ❤️ by
+            <a href="https://github.com/clew-bot" target="blank">clew-bot</a>
+        </p>
+    </div>
+    <script src="/js/fabric.min.js"></script>
+    <script src="/js/undoredo.js"></script>
+    <script src="/js/app.js"></script>
+</body>

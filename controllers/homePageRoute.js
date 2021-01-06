@@ -4,13 +4,13 @@ const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   res.render("homeland", {
-    loggedIn: req.session.loggedIn
+    loggedIn: req.session.loggedIn,
   });
 });
 
 router.get("/signUp", async (req, res) => {
   res.render("signup", {
-    loggedIn: req.session.loggedIn
+    loggedIn: req.session.loggedIn,
   });
 });
 // router.get("/homepage", withAuth, async (req, res) => {
@@ -18,6 +18,11 @@ router.get("/signUp", async (req, res) => {
 //     loggedIn: req.session.loggedIn,
 //   })
 // })
+router.get("/draw", withAuth, async (req, res) => {
+  res.render("draw", {
+    loggedIn: req.session.loggedIn,
+  });
+});
 
 router.get("/dashboard", withAuth, async (req, res) => {
   try {
@@ -43,7 +48,6 @@ router.get("/watch", withAuth, async (req, res) => {
     loggedIn: req.session.loggedIn,
   });
 });
-
 
 // router.get("/:id", withAuth, async (req, res) => {
 //   try {
@@ -74,7 +78,4 @@ router.get("/watch", withAuth, async (req, res) => {
 //   }
 // });
 
-
 module.exports = router;
-
-
