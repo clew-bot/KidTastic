@@ -1,5 +1,5 @@
 {{>header}}
-link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/styles.css">
 <div id="headerTag2">
   <h4>KidTastic</h4>
 </div>
@@ -11,31 +11,14 @@ link rel="stylesheet" href="/css/styles.css">
   </div>
 </div>
 
-
+{{#unless isChild}}
 <h3>Create a profile for your child(ren):</h3>
 
 <form class="form new-project-form">
   <h2>Child can fill this form out individually or with a parent/guardian:</h2>
   <label for="kidName">name:</label>
  
-  <input class="form-input" type="text" id="kidName" />
-
-  <div class="form-group">
-    <label for="kidBirth">birthday: </label>
-    <input class="form-input" type="date" id="kidBirth" />
-  </div>
-  <div class="form-group">
-    <label for="userId">username: </label>
-    <textarea class="form-input" id="kidUsername"></textarea>
-  </div>
-
-  <label for="password-login">password:</label>
-  <input class="form-input" type="password" id="password-login" />
-
-  <div class="form-group">
-    <button type="submit">Add Child</button>
-
-<input class="form-input" type="text" id="kidName" name="project-name" />
+ <input class="form-input" type="text" id="kidName" name="project-name" />
 
   <div class="form-group">
     <label for="kidBirth">birthday: </label>
@@ -49,7 +32,7 @@ link rel="stylesheet" href="/css/styles.css">
     <button type="submit">Add Child</button>
   </div>
 </form>
-
+{{/unless}}
 
 {{!-- {{#if projects.length}}
 <div class="col-md-6 project-list">
