@@ -4,38 +4,57 @@
   <h4>KidTastic</h4>
 </div>
 
-
+{{#if isChild}}
 <div class="row">
   <div class="col-auto">
     <h2>Nice to see you again, {{name}}!</h2>
-    <p>How </p>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          Watch Videos
-        </div>
-        <div class="col-4">
-          Draw
-        </div>
-        <div class="col-4">
-          <i>Play (Coming Soon...)</i>
-        </div>
-        <div class="col-4">
-          Watch Videos
+    <p>Welcome </p>
+ 
+          <p>Play (Coming Soon...)</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 <h3 id="randomQuote"></h3>
-{{#unless isChild}}
-<h3>Create a profile for your child(ren):</h3>
+{{else}}
 
-<form class="form new-project-form">
+<div class="form-style-3" style="margin:0 auto;">
+<form>
+<fieldset style="text-align: center;">
+  <legend><h3>Create a profile for your child(ren):</h3></legend>
+
+<label for="field1"><span>Name: <span class="required">*</span></span>
+<input type="text" id="kidName" class="input-field" name="field1" value="" /></label>
+
+<label for="field2"><span>Username: <span class="required">*</span></span>
+<input type="text" id="kidUsername" class="input-field" name="field2" value="" /></label>
+
+<label for="bday"><span>Birthday: <span class="required">*</span></span>
+<input type="date" id="kidBirth" name="bday"></label>
+
+<label for="field3"><span>Password: <span class="required">*</span></span>
+<input type="password" id="password-login" class="input-field" name="field3" value="" /></label>
+<button type="submit" class="styleBtn">Add Child Profile</button>
+
+<p style="margin-top:10px;">* indicates required field </p><br>
+<p>Child Username and Password will be used to log on</p>
+</fieldset>
+
+{{!-- <fieldset><legend>Message</legend>
+<label for="field6"><span>Message <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
+<label><span> </span>
+</fieldset> --}}
+</form>
+</div>
+
+{{!-- OLD CODE -> SAVE FOR REFERENCE --}}
+
+{{!-- <form class="form new-project-form">
   <h2>Child can fill this form out individually or with a parent/guardian:</h2>
   <label for="kidName">name:</label>
 
-  <input class="form-input" type="text" id="kidName" name="project-name" />
+  <input class="form-input" type="text"  name="project-name" />
 
   <div class="form-group">
     <label for="kidBirth">birthday: </label>
@@ -49,39 +68,37 @@
   <input class="form-input" type="password" id="password-login" />
   <div class="form-group">
     <button type="submit">Add Child</button>
-
+</div>
   </div>
-</form>
+</form> --}}
 <script src="./js/profile.js"></script>
-{{/unless}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script src="./js/api.js"></script>
+{{!-- {{/unless}} --}}
+{{/if}}
+{{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <iframe src="https://giphy.com/embed/wVRM3ItKfEsmc" width="480" height="278" frameBorder="0" class="giphy-embed"
   allowFullScreen></iframe>
-<p><a href="https://giphy.com/gifs/otp-sword-art-online-i-love-her-wVRM3ItKfEsmc">via GIPHY</a></p>
+<p><a href="https://giphy.com/gifs/otp-sword-art-online-i-love-her-wVRM3ItKfEsmc">via GIPHY</a></p> --}}
 <a href="/">click here to go back to the main page</a>
 <!-- Loop over each object in the projects array -->
 {{#each children as |Child| }}
 
-<div class="row mb-4 project">
-  <div class="col-md-5">
+
+  <div class="" >
     <div id="homepage">
       <h2>
         <!-- Call helper function with triple brackets to render the emoji span as HTML -->
         {{!-- {{{get_emoji}}} --}}
-        <br href="/Child/{{Child.id}}">
-        {{Child.name}}
+        <h2>Child Name:</h2>{{Child.name}}
+
         </br>
         </br>
+        <h2>Birthday: </h2>
         {{Child.birthDate}}
         </br>
         {{Child.userId}}
       </h2>
     </div>
   </div>
-  <div class="col-md-7">
 
-  </div>
-</div>
 {{/each}}
-{{>footer}}
+{{>footer2}}

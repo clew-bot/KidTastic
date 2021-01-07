@@ -18,13 +18,13 @@ const newFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/dashboard");
     } else {
-      alert("Failed to create project");
+      alert(`Failed to create profile.. 😭...Check all fields twice.`);
     }
   }
 };
 
 document
-  .querySelector(".new-project-form")
+  .querySelector(".form-style-3")
   .addEventListener("submit", newFormHandler);
 
  
