@@ -134,3 +134,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+#partition {
+  margin: 10px 43.5% 0px 0;
+}

@@ -18,5 +18,11 @@
     "name": "Tim Budkas",
     "email": "timbudkas@google.com",
     "password": "password12345"
-  }
+  },
+{
+  "name": "Barney Frank",
+  "email": "barney@barney.com",
+  "password": "password12345"
+}
+
 ]
