@@ -1,53 +1,51 @@
 <link rel="stylesheet" href="/css/styles.css">
-<link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/css/footer2.css">
 {{>header}}
 <main>
-<body>
+
+  <body>
 
     <h2>Login</h2>
 
     <form class="form login-form">
-      
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
+
+      <label for="email-login">email/user-name:</label>
+      <input class="form-input" type="text" id="email-login" />
 
 
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
+      <label for="password-login">password:</label>
+      <input class="form-input" type="password" id="password-login" />
 
-      <div class="form-group">
+      {{!-- <div class="form-group"> --}}
         <button class="btn btn-primary" type="submit">login</button>
 
     </form>
 
-
+    <hr id="partition">
 
     <h2>Signup</h2>
 
     <form class="form signup-form">
-    
-  
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
 
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
- 
-   
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
 
-    
-        <button class="btn btn-primary" type="submit">signup</button>
+      <label for="name-signup">name:</label>
+      <input class="form-input" type="text" id="name-signup" />
+
+      <label for="email-signup">email:</label>
+      <input class="form-input" type="text" id="email-signup" />
+
+
+      <label for="password-signup">password:</label>
+      <input class="form-input" type="password" id="password-signup" />
+
+
+      <button class="btn btn-primary" type="submit">signup</button>
 
     </form>
-  </div>
+    </div>
 
 
-</body>
+  </body>
 </main>
 <script src="./js/login.js"></script>
-{{> footer}}
-
-
-
+{{>footer2}}

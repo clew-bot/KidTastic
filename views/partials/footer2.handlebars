@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/footer2.css">
+<footer>
+    <nav>
+        {{!-- I put this in the footer because it would look better
+        and go with the flow more as the user can just log out straight
+        from the footer SKIP THIS --}}
+        {{#if loggedIn}}
+        <h3>You are currently logged in</h3>
+        <a href="/watch">Watch Videos</a> |
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+        <a href="/signUp">Login/Signup</a>
+        {{/if}}
+        <button>ADD<a id="addBtn"></a></button>
+    </nav>
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+    <div id="footerTag">
+        <h4><a href="/">KidTastic</a></h4>
+
+        {{!-- CODE HERE --}}
+
+
+    </div>
+</footer>
