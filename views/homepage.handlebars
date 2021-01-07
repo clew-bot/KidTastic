@@ -7,10 +7,27 @@
 
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Nice to see you again, {{name}}!</h2>
+    <p>How </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          Watch Videos
+        </div>
+        <div class="col-4">
+          Draw
+        </div>
+        <div class="col-4">
+          <i>Play (Coming Soon...)</i>
+        </div>
+        <div class="col-4">
+          Watch Videos
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
+<h3 id="randomQuote"></h3>
 {{#unless isChild}}
 <h3>Create a profile for your child(ren):</h3>
 
@@ -35,11 +52,10 @@
 
   </div>
 </form>
-{{/unless}}
-
 <script src="./js/profile.js"></script>
-
-
+{{/unless}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="./js/api.js"></script>
 <iframe src="https://giphy.com/embed/wVRM3ItKfEsmc" width="480" height="278" frameBorder="0" class="giphy-embed"
   allowFullScreen></iframe>
 <p><a href="https://giphy.com/gifs/otp-sword-art-online-i-love-her-wVRM3ItKfEsmc">via GIPHY</a></p>
@@ -53,7 +69,13 @@
       <h2>
         <!-- Call helper function with triple brackets to render the emoji span as HTML -->
         {{!-- {{{get_emoji}}} --}}
-        <br href="/Child/{{Child.id}}">{{Child.name}}</br></br>{{Child.birthDate}}</br>{{Child.userId}}</a>
+        <br href="/Child/{{Child.id}}">
+        {{Child.name}}
+        </br>
+        </br>
+        {{Child.birthDate}}
+        </br>
+        {{Child.userId}}
       </h2>
     </div>
   </div>
