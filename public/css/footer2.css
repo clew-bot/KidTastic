@@ -1,0 +1,17 @@
+body {
+    position: relative;
+}
+footer {
+  padding: 5px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(228, 216, 84);
+  color: white;
+  text-align: center; 
+  font-size: 20px;
+}
