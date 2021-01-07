@@ -18,7 +18,7 @@ const newFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/dashboard");
     } else {
-      alert(`Failed to create profile.. 😭...Check all fields twice.`);
+      alert("Failed to create profile.. 😭...Check all fields twice.");
     }
   }
 };
