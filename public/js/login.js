@@ -17,7 +17,7 @@ const loginFormHandler = async (event) => {
       // If successful, redirect the browser to the profile page
       document.location.replace("/dashboard");
     } else {
-      alert(response.statusText);
+      alert("Wrong Password!");
     }
   }
 };
@@ -39,7 +39,7 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/dashboard");
     } else {
-      alert(response.statusText);
+      alert("Password must be 8 characters long");
     }
   }
 };
