@@ -30,7 +30,7 @@
     padding: 10px;
     background-color: #f3d6b0c7;  
     overflow: hidden;
-    width: 20%!important; 
+    /* width: 20%!important;  */
     border-radius: 5px;
 }
 #welcome {
