@@ -1,0 +1,37 @@
+.theGames {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.games {
+ max-width: 20vw;
+ max-height: 20vw;
+}
+
+
+.wrapper {
+    width: 300px;
+    height: 280px;
+    position: relative;
+    margin: 40px;
+  }
+  
+.cover,
+  img {
+    position: absolute;
+  }
+  
+.cover {
+    max-width: 20vw;
+    max-height: 20vw;
+    background: rgb(87, 255, 143);
+  }
+  .gcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text2 {
+      font-size: 2vw;
+  }

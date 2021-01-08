@@ -44,7 +44,7 @@ body {
   margin-top: 5vw;
   margin-right: 20vw;
   margin-left: 5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
   padding: 50px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -56,7 +56,7 @@ body {
 .welcome2 {
   margin-right: 5vw;
   margin-left: 20vw;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
   padding: 50px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -68,7 +68,7 @@ body {
 .welcome3 {
   margin-right: 20vw;
   margin-left: 5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
   padding: 50px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -252,3 +252,5 @@ body {
 	position:relative;
 	top:1px;
 }
+
+

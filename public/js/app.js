@@ -70,9 +70,11 @@ drawing.addEventListener("click", () => {
 //init//
 const initCanvas = (id) => {
   const width = window.innerWidth * 0.8;
+  const height = window.innerHeight - 140;
   return new fabric.Canvas(id, {
     width,
-    height: width * 0.7,
+    height,
+    // height: width * 0.7,
     isDrawingMode: false,
   });
 };
