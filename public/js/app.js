@@ -70,11 +70,9 @@ drawing.addEventListener("click", () => {
 //init//
 const initCanvas = (id) => {
   const width = window.innerWidth * 0.8;
-  const height = window.innerHeight - 140;
   return new fabric.Canvas(id, {
     width,
-    height,
-    // height: width * 0.7,
+    height: width * 0.8,
     isDrawingMode: false,
   });
 };
@@ -195,7 +193,7 @@ genText.addEventListener("click", () => {
     fontSize: 54,
     fontFamily: "Comic Sans",
   });
-  textBox.animate("left", 850, {
+  textBox.animate("left", 550, {
     onChange: canvas.renderAll.bind(canvas),
     duration: 1300,
     easing: fabric.util.ease.easeOutBounce,
